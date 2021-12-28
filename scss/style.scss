@@ -1,0 +1,71 @@
+// @import "_nullstyle";
+
+.container {
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #7f7f7f;
+    margin: 20px 0;
+}
+
+table tr,
+td,
+th {
+    border: 1px solid #7f7f7f;
+}
+
+table td,
+th {
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.05s;
+    padding: 10px 20px;
+    user-select: none;
+}
+table th::after {
+    content: "\2193";
+    position: relative;
+    top: -2px;
+    left: 8px;
+    opacity: 0;
+}
+
+.arrowUp {
+    color: green;
+}
+.arrowUp::after {
+    content: "\2191";
+    position: relative;
+    top: -3px;
+    left: 8px;
+    opacity: 1;
+}
+.arrowDown {
+    color: green;
+}
+.arrowDown::after {
+    opacity: 1;
+}
+
+table th:active {
+    color: red;
+}
+
+.table__header {
+    font-family: Georgia;
+    font-size: 25px;
+    margin: 30px 0;
+}
+h2 {
+    font-family: Georgia;
+    font-size: 25px;
+    line-height: 1.5;
+    font-weight: normal;
+}

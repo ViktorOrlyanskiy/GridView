@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Применение ООП в JavaScript</h1>
+
+        <h2>Создан класс GridView который имеет метод render(). Метод способен строить таблицы на
+            основе
+            передаваемых данных в виде двумерного массива arr = [
+            {
+            vendorCode: '21006',
+            name: 'Циркулярная пила',
+            price: '5 600 ₽',
+            stock: '7',
+            sales: '23',
+            reviews: '21',},
+            {}, ].
+            Вывод количества столбцов настраивается с помощью передаваемых атрибутов в виде массива. <br> attribute: {
+            'vendorCode': {
+            'label': 'Артикул',
+            },
+            'name': {
+            'label': 'Наименование',
+            },
+            'price': {
+            'label': 'Цена',
+            },
+            },
+            <br>
+            <br>
+            От класса GridView наследуется новый класс GridViewSort который расширяет базовый класс, добавляя метод для
+            сортировки столбцов.
+        </h2>
+        <div></div>
+    </div>
+
+
+    <script src="js/class/GridView.js"></script>
+    <script src="js/class/GridViewSort.js"></script>
+
+    <script src="js/library.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
